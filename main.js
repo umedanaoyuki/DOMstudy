@@ -4,6 +4,11 @@
 {
     //ボタン要素取得後 addEventListner
     document.querySelector('button').addEventListener('click',() => {
-        alert(document.querySelector('select').value);
-    })
-};
+        alert(document.querySelectorAll('input').forEach((radio) => {
+
+            if (radio.checked == true) {
+                alert(radio.value);
+            }
+        }));
+    });
+}
