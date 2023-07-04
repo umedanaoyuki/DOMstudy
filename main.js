@@ -13,7 +13,8 @@
         // document.querySelectorAll('li')[1].textContent = 'Changed';
         // document.querySelectorAll('li')[2].textContent = 'Changed';
 
-        document.querySelectorAll('li').forEach((li) => {
+        document.querySelector('#second').textContent = 'Yahoo';
+        document.querySelectorAll('.target').forEach((li) => {
             li.textContent = 'Changed';
 
         })
