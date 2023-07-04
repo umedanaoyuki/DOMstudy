@@ -4,9 +4,8 @@
 {
     //ボタン要素取得後 addEventListner
     document.querySelector('button').addEventListener('click',() => {
-        //document.querySelector('p').textContent = 'こんにちは';
-        //console.log('test');
-        document.querySelector('p').textContent = document.querySelector('button').textContent;
+        document.querySelector('p').classList.add('pink-bg', 'red-border');
+        document.querySelector('p').classList.remove('green-color');
     });
 
     console.log('Hello');
