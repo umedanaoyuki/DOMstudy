@@ -9,7 +9,14 @@
         // } else {
         //     document.querySelector('p').classList.remove('pink-bg');
         // }
-        document.querySelector('p').classList.toggle('pink-bg');
+        // document.querySelectorAll('li')[0].textContent = 'Changed';
+        // document.querySelectorAll('li')[1].textContent = 'Changed';
+        // document.querySelectorAll('li')[2].textContent = 'Changed';
+
+        document.querySelectorAll('li').forEach((li) => {
+            li.textContent = 'Changed';
+
+        })
 
     });
 
