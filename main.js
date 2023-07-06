@@ -7,9 +7,9 @@
 
     scores.push(100,200);
 
-    for (let i  = 0; i< scores.length; i++ ) {
-        console.log(scores[i]);
-    }
+    scores.forEach((score, index) => {
+        console.log(`${index}: ${score}`);
+    });
 
 
 }
