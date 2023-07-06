@@ -2,7 +2,10 @@
 
 //プログラムが実行される順序を考えてみる
 {
-    document.addEventListener('mousemove',(e) => {
-        document.querySelector('p').textContent = `X: ${e.clientX} Y: ${e.clientY}`;
-    });
+    document.querySelector('form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        document.querySelector('p').textContent = document.querySelector('input').value;
+    
+
+    })
 }
