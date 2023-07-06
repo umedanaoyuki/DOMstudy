@@ -4,12 +4,14 @@
 {
     //ボタン要素取得後 addEventListner
     document.querySelector('button').addEventListener('click',() => {
-        document.querySelectorAll('input').forEach((radio) => {
+        const colors = [];
 
-            if (radio.checked == true) {
-                alert(radio.value);
-                console.log("test");
+        document.querySelectorAll('input').forEach((checkbox) => {
+
+            if (checkbox.checked == true) {
+                colors.push(checkbox.value);
             }
         });
+        alert(colors.join(','));
     });
 }
