@@ -7,9 +7,13 @@
 
     scores.push(100,200);
 
-    scores.forEach((score, index) => {
-        console.log(`${index}: ${score}`);
+    //値の再代入がされるため、letにする
+    let sum = 0;
+    scores.forEach((score) => {
+         //console.log(`${index}: ${score}`);
+         sum = sum + score;
     });
 
-
+    console.log(`Sum: ${sum}`);
+    
 }
