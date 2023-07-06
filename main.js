@@ -2,10 +2,8 @@
 
 //プログラムが実行される順序を考えてみる
 {
-    document.querySelector('form').addEventListener('submit', (e) => {
-        e.preventDefault();
-        document.querySelector('p').textContent = document.querySelector('input').value;
-    
+    document.querySelector('button').addEventListener('click', (e) => {
+        document.querySelector('p').style.fontSize = '24px';
 
     })
 }
