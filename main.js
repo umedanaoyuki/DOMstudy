@@ -1,10 +1,7 @@
 'use strict';
 
 {
-    const scores =  [70, 80, 90, 85,];
-
-    console.log(scores[2]);
-    console.log(scores.length);
-    scores[1] = 90;
+    const scores =  [70, 90, 80, 85,];
+    scores.push(65,72);
     console.log(scores);
 }
